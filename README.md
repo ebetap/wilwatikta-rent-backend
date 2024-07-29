@@ -81,4 +81,4 @@ Proyek ini dilisensikan di bawah lisensi MIT - lihat file [LICENSE](LICENSE) unt
 
 ## Kontak
 
-Jika Anda memiliki pertanyaan atau membutuhkan bantuan, jangan ragu untuk menghubungi kami di [support@wilwatikta-rent.com](mailto:support@wilwatikta-rent.com).
+Jika Anda memiliki pertanyaan atau membutuhkan bantuan, jangan ragu untuk menghubungi kami di [beta.priyoko@students.amikom.ac.id](beta.priyoko@students.amikom.ac.id).
