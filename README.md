@@ -1,43 +1,35 @@
-# Wilwa-Tikta Rent
+### Wilwa-Tikta Rent
 
-Wilwa-Tikta Rent adalah aplikasi penyewaan online yang memungkinkan pengguna untuk menyewa berbagai barang, seperti properti, kendaraan, peralatan, pakaian, aksesori, teknologi, elektronik, dan layanan. Aplikasi ini menyediakan fitur untuk mengelola penyewaan, ulasan dan penilaian, pembayaran, serta notifikasi.
+**Wilwa-Tikta Rent** is an online rental application allowing users to rent items such as properties, vehicles, tools, clothing, accessories, technology, electronics, and services. It features rental management, reviews and ratings, payments, and notifications.
 
-## Fitur Utama
+### Key Features
+- **User Authentication:** Secure login and registration with JWT protection.
+- **CRUD Operations:** Manage rental items.
+- **Order Management:** Handle rentals.
+- **Payment & Refunds:** Stripe integration.
+- **Review & Rating System:** User feedback on rented items.
+- **Notifications:** Activity alerts for users.
+- **Security:** Helmet for web security.
+- **API Documentation:** Swagger for API docs.
 
-- **Autentikasi Pengguna:** Sistem login dan registrasi dengan proteksi JWT.
-- **CRUD Item:** Pengelolaan item yang tersedia untuk disewa.
-- **Manajemen Pesanan:** Pengelolaan penyewaan oleh pengguna.
-- **Pembayaran dan Pengembalian Dana:** Integrasi dengan Stripe untuk transaksi pembayaran.
-- **Sistem Ulasan dan Penilaian:** Pengguna dapat memberikan ulasan dan penilaian untuk item yang disewa.
-- **Notifikasi:** Pemberitahuan untuk pengguna tentang aktivitas terkait penyewaan.
-- **Keamanan:** Menggunakan Helmet untuk melindungi aplikasi dari serangan web umum.
-- **Dokumentasi API:** Menggunakan Swagger untuk dokumentasi API.
+### Requirements
+- Node.js
+- MongoDB
+- Stripe Account
 
-## Persyaratan
-
-- Node.js (versi terbaru disarankan)
-- MongoDB (penggunaan MongoDB Atlas disarankan untuk penyimpanan online)
-- Stripe Account (untuk integrasi pembayaran)
-
-## Instalasi dan Menjalankan Proyek
-
-1. **Clone Repository**
-
+### Installation & Setup
+1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/ebetap/wilwa-tikta-rent.git
+   git clone https://github.com/ebetap/wilwatikta-rent-backend.git
    cd wilwa-tikta-rent
    ```
 
-2. **Instal Dependensi**
-
+2. **Install Dependencies:**
    ```bash
    npm install
    ```
 
-3. **Konfigurasi Environment Variables**
-
-   Buat file `.env` di root proyek dan tambahkan konfigurasi berikut:
-
+3. **Configure Environment Variables:** Create a `.env` file with:
    ```
    NODE_ENV=development
    PORT=5000
@@ -46,39 +38,27 @@ Wilwa-Tikta Rent adalah aplikasi penyewaan online yang memungkinkan pengguna unt
    STRIPE_SECRET_KEY=your_stripe_secret_key
    ```
 
-4. **Menjalankan Server**
-
+4. **Run the Server:**
    ```bash
    npm start
    ```
+   The server will run on `http://localhost:5000`.
 
-   Server akan berjalan di `http://localhost:5000`.
+### Project Structure
+- `src/`
+  - `config/` - Database and other configurations.
+  - `controllers/` - API route logic.
+  - `models/` - MongoDB models.
+  - `routes/` - API routes definitions.
+  - `services/` - Notifications and other services.
+  - `middleware/` - Application middleware.
+  - `utils/` - Utility functions.
 
-5. **Mengakses Dokumentasi API**
+### Contribution
+Contributions are welcome. Please create a pull request or open an issue.
 
-   Dokumentasi API tersedia di `http://localhost:5000/api-docs`.
+### License
+This project is licensed under the MIT License. See the `LICENSE` file for more details.
 
-## Struktur Proyek
-
-```bash
-src/
-├── config/           # Konfigurasi database dan lainnya
-├── controllers/      # Logika kontrol untuk rute API
-├── models/           # Definisi model untuk MongoDB
-├── routes/           # Definisi rute API
-├── services/         # Layanan untuk notifikasi dan lainnya
-├── middleware/       # Middleware aplikasi
-└── utils/            # Utility functions
-```
-
-## Kontribusi
-
-Kami menerima kontribusi dari siapa pun yang ingin meningkatkan aplikasi ini. Untuk kontribusi, silakan buat pull request atau buka isu baru di repository ini.
-
-## Lisensi
-
-Proyek ini dilisensikan di bawah lisensi MIT - lihat file [LICENSE](LICENSE) untuk detail lebih lanjut.
-
-## Kontak
-
-Jika Anda memiliki pertanyaan atau membutuhkan bantuan, jangan ragu untuk menghubungi kami di [beta.priyoko@students.amikom.ac.id](beta.priyoko@students.amikom.ac.id).
+### Contact
+For questions or assistance, contact us at [beta.priyoko@students.amikom.ac.id](mailto:alwaysworkwithbeta@gmail.com).
